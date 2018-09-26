@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>DevHouse | Web & Mobile Apps Developer</title>
+    <link rel="shortcut icon" href="assets/images/icon.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+    <link href="/bootstrap/css/bootstrap.css" type="text/css" rel="stylesheet">
+    <link href="/stylesheets/screen.css" type="text/css" rel="stylesheet">
+    <link href="/stylesheets/font.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/stylesheets/masonry.css" />
+    <link rel="stylesheet" type="text/css" href="/foundation-icons/foundation-icons.css" />
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/js/modernizr.custom.js"></script>
+</head>
+    <body>
+    <div class="top-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <ul>
+                        <li><i class="step fi-telephone size-36"></i> +62812-9500-9910</li>
+                        <li><i class="step fi-mail size-36"></i> devhouseid99@gmail.com</li>
+                        <li><a href="#"  data-toggle="modal" data-target="#exampleModal">Need Quotation ?<i style="color:#FF6510" class="fas fa-question-circle"></i></a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 socmed">
+                    <ul style="float:right;">
+                        <li><i class="step fi-social-facebook size-48"></i></li>
+                        <li><i class="step fi-social-instagram size-48"></i></li>
+                        <li><i class="step fi-social-linkedin size-48"></i></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>   
+    <header>
+        <div class="container">
+            <nav class="navbar navbar-expand-lg">
+                <a class="navbar-brand" href="/">
+                    <img src="/assets/images/logo-white.png" alt="devHouse Logo">
+                </a>
+
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#mobileNavBar" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon">
+                        <img src="/assets/images/list.png">
+                    </span>
+                </button>
+                
+                <div class="collapse navbar-collapse" id="mobileNavBar">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/why-us">Why Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/process">Our Process</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/work">Our Work</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/contact">Contact Us</a>
+                        </li>
+                        <li class="nav-item dropdown" style="width: 19px;padding: ;margin-left: 15px;">
+                            <a class="nav-link en" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item enDR opensans-bold" href="#">EN</a>
+                                <a class="dropdown-item idDR opensans-bold" href="#">ID</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                
+
+            </nav>
+        </div>
+    </header>
+    
+<!-- Quotation Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+        <div class="modal-header" style="background-color:#fe3; color:#335578">
+            <h5 class="modal-title opensans-bold" id="exampleModalLabel">Hola! you can tell us what you need</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <form action="">
+            <div class="modal-body">
+            
+                    <div class="form-group">
+                        <label for="category " class="opensans-bold mb-2">Choose Category</label>
+                        <select class="form-control opensans-reg" id="category">
+                            <option>Mobile Apps</option>
+                            <option>Web Apps</option>
+                            <option>E-commerce</option>
+                            <option>Others</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="detail"  class="opensans-bold mb-2">This quotation for ?</label>
+                        <textarea class="form-control opensans-reg" id="detail" rows="3"></textarea>
+                    </div>
+                
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary opensans-bold" data-dismiss="modal">Send</button>
+            </div>
+        </form>
+        </div>
+    </div>
+</div>
+    
