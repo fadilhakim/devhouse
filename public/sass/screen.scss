@@ -5,6 +5,20 @@
 
 @import "compass/reset";
 @import './mixins.scss';
+
+.preload {
+    height:100%;
+    width: 100%;
+    background: #fff;
+    top: 0px;
+    left: 0px;
+    position: fixed;
+    z-index: 2;
+    img {
+        margin: auto;
+        display: block;
+    }
+}
  p {
      line-height: 25px;
  }
@@ -99,7 +113,7 @@
     position: fixed;
     width: 100%;
     padding: 5px 0 5px 0;
-    z-index: 99;
+    z-index: 1;
     .col-lg-8 {
         padding-top: 3px;
     }

@@ -16,8 +16,19 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="/bootstrap/js/bootstrap.min.js"></script>
     <script src="/js/modernizr.custom.js"></script>
+    <script>
+       window.addEventListener("load",function(){
+         var load_screen = document.getElementById("preload");
+         document.body.removeChild(load_screen) 
+       }) 
+    </script>
 </head>
     <body>
+
+    <div class="preload" id="preload">
+        <img class="img-fluid centered" src="/assets/images/infinity.gif" />
+    </div>
+                    
     <div class="top-header">
         <div class="container">
             <div class="row">
@@ -118,4 +129,3 @@
         </div>
     </div>
 </div>
-    
