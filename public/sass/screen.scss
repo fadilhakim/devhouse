@@ -13,12 +13,29 @@
     top: 0px;
     left: 0px;
     position: fixed;
-    z-index: 2;
+    z-index: 4;
     img {
         margin: auto;
         display: block;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        position: absolute;
     }
 }
+
+.border-top {
+    height: 10px;
+    width:100%;
+    background-image: url('/assets/images/border.png');
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 3;
+}
+
  p {
      line-height: 25px;
  }
