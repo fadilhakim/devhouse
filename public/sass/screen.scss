@@ -5,7 +5,11 @@
 
 @import "compass/reset";
 @import './mixins.scss';
-
+a {
+    &:hover {
+        text-decoration: none;
+    }
+}
 .preload {
     height:100%;
     width: 100%;
@@ -122,15 +126,15 @@
  .section-subtitle {
     font-family: 'Muli', sans-serif;
     font-size: 34px;
-    line-height: 40px;
+    line-height: 45px;
     text-align: center;
     color: #000000;
+    font-weight: 300;
  }
 
 
 .top-header {
     background-color: #fe3;
-    position: fixed;
     width: 100%;
     padding: 5px 0 5px 0;
     z-index: 1;
@@ -204,13 +208,22 @@ header {
     padding-top: 25px;
     padding-bottom: 100px;
     position: relative;
-    border-bottom: 10px solid #e2f3ff;
     background-color:#fff;
+    @include mobile-device-screen {
+        padding-bottom: 0px;
+        padding-left: 0px;
+    }
+    .is-mobile {
+        height: 230px;
+    }
     .illus-a {
         width: 62%;
         display: block;
         position: absolute;
         left: 30%;
+        @include mobile-device-screen {
+            left: 16%;
+        }
 
     }
 
@@ -218,6 +231,9 @@ header {
         width: 51%;
         position: absolute;
         left: 22%;
+        @include mobile-device-screen {
+            left: 16%;
+        }
     }
 
     h1 {
@@ -225,6 +241,10 @@ header {
         margin: 30px 0 30px 0;
         line-height: 55px;
         font-weight: 400;
+        @include mobile-device-screen {
+            font-size: 35px;
+            margin: 30px 0 10px 0;
+        }
     }
     p {
         line-height: 30px;
@@ -253,7 +273,7 @@ header {
 //service
 
 .service {
-    padding-bottom: 40px;
+    padding-top: 20px;
     h3 {
         font-size:25px;
         font-size: 20px;
@@ -264,30 +284,33 @@ header {
         font-size: 30px;
         color: #000;
         letter-spacing: normal;
-        line-height: 40px;
+        line-height: 45px;
         font-family: 'Muli', sans-serif;
-        font-weight:600;
-        margin-bottom: 45px;
+        font-weight:300;
+        margin-bottom: 35px;
+        @include mobile-device-screen {
+            font-size: 25px;
+        }
     }
     .col-lg-6 {
         position: relative;
         .service-img {
-            height:480px ;
+            height: 400px;
             position: relative;
         }
     }
     .illus-2a {
         position: absolute;
-        width: 80%;
+        width: 72%;
     }
     .illus-2b {
         position: absolute;
-        width: 65%;
+        width: 62%;
         bottom: 0%;
-        right: 40px;
+        right: 29%;
     }
     .list {
-        margin-bottom: 20px;
+        margin-bottom: 35px;
         .icons {
             width:45px;
             height: 45px;
@@ -322,8 +345,11 @@ header {
 
 .benefits {
     // background-color: #e2f3ff;
-    padding-top: 45px;
+    padding-top: 115px;
     padding-bottom: 45px;
+    @include mobile-device-screen {
+        padding-top: 10px;
+    }
     .border-box {
         width: 90%;
         height: 642px; 
@@ -331,11 +357,19 @@ header {
         background-size: 100%;
         background-repeat: no-repeat;
         margin: auto;
+        @include mobile-device-screen {
+            background-size: cover;
+        }
     }
     .left {
         width: 50%;
         padding-left: 55px;
         padding-top: 50px;
+        @include mobile-device-screen {
+            width: 100%;
+            padding-left: 35px;
+            padding-top: 50px;
+        }
         .border-pink {
             width: 60px;
             border: solid 2px #ff4ab5;
@@ -352,6 +386,9 @@ header {
             font-family: 'Muli', sans-serif;
             margin-top: 45px;
             width: 90%;
+            @include mobile-device-screen {
+                margin-top: 20px;
+            }
         }
     }
     .right {
@@ -376,12 +413,25 @@ header {
 .clients {
     padding:45px 0 45px 0;
     position: relative;
-    border-bottom: 10px solid #e2f3ff;
     .img-responsive {
         width: 85%;
+        @include mobile-device-screen {
+            margin: auto;
+            display: block;
+            width: 50%;
+        }
+    }
+    .col-lg-2 {
+        @include mobile-device-screen {
+            margin-bottom: 30px;
+            margin-top: 30px;
+        }
     }
     .section-subtitle {
         margin-bottom: 60px;
+        @include mobile-device-screen {
+            margin-bottom: 0px;
+        }
     }
     img {
         height: 100%;
@@ -395,6 +445,9 @@ header {
         height: 384px;
         width: 100px;
         background-size:cover;
+        @include mobile-device-screen {
+            display: none;
+        }
     }
 }
 
@@ -402,8 +455,17 @@ header {
     padding:45px 0 45px 0;
 }
 .team {
-    padding:45px 0 45px 0;
+    padding:115px 0 45px 0;
     position: relative;
+    @include mobile-device-screen {
+        padding:20px 0 45px 0;
+        border-bottom:1px solid rgba(0,0,0,0.3);  
+    }
+    .col-lg-3 {
+        @include mobile-device-screen {
+            margin-bottom: 30px;
+        }
+    }
     img {
         margin: auto;
         display: block;
@@ -428,6 +490,9 @@ header {
     }
     .img-responsive {
         width: 85%;
+        @include mobile-device-screen {
+            width: 55%;
+        }
     }
     .fill2 {
         background: image-url('/assets/images/illus-sampingkanan@2x.png');
@@ -435,8 +500,11 @@ header {
         right:0px;
         bottom: -250px;
         height: 496px;
-        width: 230px;
+        width: 160px;
         background-size:cover;
+        @include mobile-device-screen {
+            display: none;
+        }
     }
 }
 
@@ -448,13 +516,22 @@ footer {
         font-size: 13px;
         width: 85%;
     }
+    ul {
+        margin-top: 30px;
+    }
     li {
         font-size: 13px;
         line-height: 25px;
+        margin-bottom: 5px;
     }
     .top {
         padding:30px 0 30px 0;
-        
+        .col-lg-3 {
+            padding-top: 70px;
+            @include mobile-device-screen {
+                padding-top: 30px;
+            }
+        }
         .jumb-btn {
             padding: 18px 35px;
             font-size: 16px;
@@ -463,6 +540,8 @@ footer {
             margin-top: 30px;
             width: 200px;
             margin-bottom: 28px;
+            color: #fff;
+            
         }
         h3 {
             margin-bottom: 20px;
@@ -472,17 +551,32 @@ footer {
         }
 
         a {
-            font-weight: bolder;
-            color: #fff;
+            font-weight: 300;
+            color: #000;
+            font-family: 'Muli', sans-serif;
+            font-size: 16px;
+            &:hover {
+                color: #3645BF;
+            
+            }
         }
     }
+
+    
     .btm {
         color: #000;
         padding-top: 15px;
-        padding-top: 15px;
+        padding-left:0px;
+        padding-right: 0px;
         font-size: 13px;
         border-top:1px solid rgba(0, 0, 0, 0.3);
         font-family: 'Muli', sans-serif;
+        margin-left: 0px;
+        margin-right: 0px;
+        .col-lg-6 {
+            padding-left:0px;
+            padding-right: 0px;
+        }
         a {
             color: #000;
             font-weight: bolder;
@@ -490,9 +584,15 @@ footer {
         }
         ul {
             float: right;
+            margin-top: 10px;
+            @include mobile-device-screen {
+                float: left;
+            }
             li {
                 display: inline-block;
                 margin-left: 10px;
+                font-family: 'Muli', sans-serif;
+
             }
         }
         .icons {
@@ -513,6 +613,17 @@ footer {
                 background-size: 100%;
             }
         }
+        .footer-logo {
+            display:block;
+            margin-right: 25px;
+            width: 150px;
+            float: left;
+        }
+        h3 {
+            line-height: 55px;
+            display: block;
+            float: left;
+        }
     }
     
     .fab {
@@ -528,6 +639,7 @@ footer {
     border-radius: 3px;
     background-image: linear-gradient(to left, #3e7dff, #01d7ff);
     color: #fff;
+    border:none;
 }
 
 // borders
@@ -604,6 +716,23 @@ footer {
     text-decoration: none;
     text-transform: uppercase;
     font-weight: bold;
+}
+
+//mobile
+
+.is-mobile {
+    display: none;
+    @include mobile-device-screen { 
+        display: block;
+    }
+}
+
+
+.is-desktop {
+    display: block;
+    @include mobile-device-screen { 
+        display: none;
+    }
 }
 
 

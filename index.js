@@ -20,8 +20,8 @@ app.use(express.static(__dirname + '/public'));
 app.use(helmet(), compression(), cookieParser());
 
 
-app.get('/', (req, res) => res.render('maintenance'))
-app.get('/home', (req, res) => res.render('home'))
+app.get('/maintenance', (req, res) => res.render('maintenance'))
+app.get('/', (req, res) => res.render('home'))
 app.get('/why-us', (req, res) => res.render('why-us'))
 
 routes(app);
