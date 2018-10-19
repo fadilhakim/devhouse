@@ -450,6 +450,89 @@ header {
 
 .case {
     padding:45px 0 45px 0;
+    .row {
+        display: flex;
+    }
+    .col-lg-6 {
+        position: relative;
+        overflow: hidden;
+        border-radius:3px;
+        margin-top: 60px;
+        padding-left: 0px;
+        padding-right: 0px;
+        width: 45%;
+        max-width: 47%;
+        &:first-child {
+            margin-right: 6%;
+        }
+        @include mobile-device-screen {
+            width: 96%;
+            max-width: 92%;
+            margin-left: 4%;
+            margin-right: 4%;
+            &:first-child {
+                margin-right: 2%;
+            }
+           
+        }
+    }
+    .image {
+        display: block;
+        width: 100%;
+        height: auto;
+        border-radius:3px;
+        height: 100%;
+      }
+      
+      .overlay-1 {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 0;
+        transition: .5s ease;
+        background-color: #059DFF;
+      }
+
+      .overlay-2 {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 0;
+        transition: .5s ease;
+        background-color:  #21C7B8;
+      }
+      
+      .case1:hover .overlay-1 {
+        opacity: 1;
+        cursor: pointer;
+      }
+
+      .case2:hover .overlay-2 {
+        opacity: 1;
+        cursor: pointer;
+      }
+      
+      .text {
+        color: white;
+        font-size: 20px;
+        position: absolute;
+        font-family: 'Muli', sans-serif;
+        font-weight: 500;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        text-align: center;
+      }
 }
 .team {
     padding:115px 0 45px 0;
@@ -507,7 +590,39 @@ header {
 
 // footer
 
+#appCaseModal {
+    img {
+        border-radius:3px;
+    }
+    .modal-dialog {
+        max-width: 900px;
 
+    }
+    .modal-body {
+        padding: 0px;
+    }
+    @include mobile-device-screen {
+        margin-left: 4%;
+        margin-right: 4%;
+    }
+}
+
+#webCaseModal {
+    img {
+        border-radius:3px;
+    }
+    .modal-dialog {
+        max-width: 900px;
+
+    }
+    .modal-body {
+        padding: 0px;
+    }
+    @include mobile-device-screen {
+        margin-left: 4%;
+        margin-right: 4%;
+    }
+}
 footer {
     p {
         font-size: 13px;
