@@ -1,52 +1,13 @@
-.cd-background-wrapper {
-    position: relative;
-    overflow: hidden;
-    -webkit-perspective: 1000px;
-    perspective: 1000px;
-  }
-  
-  .cd-floating-background {
-    position: relative;
-    top: 0;
-    left: 0;
-    -webkit-transform-style: preserve-3d;
-    transform-style: preserve-3d;
-    -webkit-transform: translateZ(0);
-    -ms-transform: translateZ(0);
-    transform: translateZ(0);
-  }
-  .cd-floating-background.is-absolute {
-    position: absolute;
-  }
-  .cd-floating-background img {
-    display: block;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    /* fixes a Firefox bug - images not correctly rendered*/
-    background-color: rgba(255, 255, 255, 0.01);
-  }
-  .cd-floating-background img:not(:first-child) {
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
-  .cd-floating-background img:first-child {
-    -webkit-transform: translateZ(50px);
-    -ms-transform: translateZ(50px);
-    transform: translateZ(50px);
-  }
-  .cd-floating-background img:nth-child(2) {
-    -webkit-transform: translateZ(290px);
-    -ms-transform: translateZ(290px);
-    transform: translateZ(290px);
-  }
-  .cd-floating-background img:nth-child(3) {
-    -webkit-transform: translateZ(400px);
-    -ms-transform: translateZ(400px);
-    transform: translateZ(400px);
-  }
-  .no-preserve-3d .cd-floating-background {
-    /* we target browsers that don't support preserve-3d and show just a standard image - no effect visible */
-    position: relative;
-  }
-  
+// [data-parallax]{
+//   position: relative;
+//   width: 100vw;
+//   height: 100vh;
+// }
+
+[data-parallax] > *{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 25%;
+  top: 25%;
+}
