@@ -262,7 +262,15 @@ header {
         background-image: url("/assets/images/icon-scroll.png");
         height: 44px;
         width: 30px;
-        margin: auto;  
+        margin: auto;
+        @include mobile-device-screen {
+            display:none;
+        } 
+    }
+    .scroll-text {
+        @include mobile-device-screen {
+            display:none;
+        } 
     }
 
 }
