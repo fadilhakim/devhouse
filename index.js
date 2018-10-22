@@ -9,6 +9,7 @@ const helmet = require('helmet');
 const compression = require('compression');
 const bodyParser = require('body-parser');
 const cookieParser = require('cookie-parser');
+const i18n=require("i18n-express");
 
 
 app.all(/.*/, function(req, res, next) {
@@ -22,6 +23,11 @@ app.all(/.*/, function(req, res, next) {
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
+app.use(i18n({
+  translationsPath:(__dirname + '/lang'), 
+  siteLangs: ["en","id"],
+  textsVarName: 'translation'
+}));
 
 app.set('views', './views') // specify the views directory
 app.set('view engine', 'ejs') // register the template engine
