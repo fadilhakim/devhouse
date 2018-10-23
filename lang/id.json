@@ -2,5 +2,25 @@
     "WELCOME_MSG1": "Shape Your Ideas",
     "WELCOME_MSG2": "Prove Your Concept",
     "WELCOME_TEXT": "Kami membantu Anda Merancang dan Mengembangkan solusi digital inovatif untuk bisnis Anda. Pendekatan kami adalah menggabungkan pemahaman kita tentang perilaku pengguna dan berkomitmen untuk memenuhi tujuan bisnis anda.",
-    "WHAT_WE_DO": "What we do"
+    "WHAT_WE_DO": "What we do",
+    "WHAT_WE_DO_TEXT": "Kami adalah ahli dan pegiat dalam hal desain UI/UX yang cantik, website yang canggih dan aplikasi yang cakap",
+    "WEB_DEV": "Website Development",
+    "WEB_DEV_TEXT":"Web design and development for businesses looking to develop a new brand or rebrand a successful company.",
+    "MOBILE_DEV":"Website Development",
+    "MOBILE_DEV_TEXT":"Developing and designing cutting-edge apps for Ios and android devices.",
+    "UI_UX_DEV":"User Interface & User Experience",
+    "UI_UX_DEV_TEXT":"Creating a wireframes / mockup which illustrate features, content and interactions.",
+    "BUSINESS_OWNER":"What makes business owner choose us?",
+    "BUSINESS_OWNER_TEXT1":"We commit to help you to achieve your goals, by understanding your vision, needs and business.",
+    "BUSINESS_OWNER_TEXT2":"But we don’t always say yes for what you think you need. Instead we propose our own better solutions for you.",
+    "BUSINESS_OWNER_TEXT3":"Our expertise provides us with experience in handling & measuring every decision for projects through deep analysis, data and research",
+    "OUR_CLIENTS":"Our Clients",
+    "OUR_CLIENTS_TEXT":"We've worked with some amazing companies",
+    "CASE_STUDIES":"Case Studies",
+    "CASE_STUDIES_TEXT":"Our projects made with passion",
+    "THE_TEAM_TEXT":"We’re designers, developers and business directors. We’re real people just like you.",
+    "AMAZING_FOOTER":"Ready to make something amazing?",
+    "STARTED_FOOTER":"Let's Get Started!",
+    "ABOUT_FOOTER":"DevHouse is a web & mobile app agency focusing on beautifully-designed UI/UX, powerful websites and useful mobile applications. Founded in 2018, Our Mission to help your idea birth by understanding of user behavior with a commitment to meeting the business goals."
+
 }

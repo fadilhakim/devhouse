@@ -26,7 +26,9 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(i18n({
   translationsPath:(__dirname + '/lang'), 
   siteLangs: ["en","id"],
-  textsVarName: 'translation'
+  textsVarName: 'translation',
+  defaultLang : "en",
+  browserEnable : false
 }));
 
 app.set('views', './views') // specify the views directory
