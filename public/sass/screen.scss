@@ -172,6 +172,11 @@ a {
     padding-right: .5rem !important;
     padding-left: .5rem !important;
     font-weight: bolder;
+    display: block;
+    @include mobile-device-screen {
+        cursor: pointer;
+    }
+   
 }
 .ml-auto .dropdown-menu {
     left: auto !important;
@@ -183,7 +188,10 @@ header {
     .nav-item {
         .nav-link {
             font-family: 'Muli', sans-serif;
-            color: #000 !important;
+            color: #000;
+            &:hover {
+                color: #0063FF;
+            }
         }
         &.dropdown {
             width: 19px;
@@ -200,7 +208,7 @@ header {
         @include mobile-device-screen { 
             display: inline;
             float: right;
-            margin: 25px 25px 0;
+            margin: 15px 25px 0;
         }
     }
     .navbar-brand {
@@ -214,25 +222,15 @@ header {
             top: 0;
             left: 0;
             display: block;
-            width: 100%;
+            max-width: 100%;
             background-color: #fff;
             z-index: 99;
             padding:5px 0 0px 15px;
         }
     }
-    .navbar-collapse {
-        // @include mobile-device-screen {
-        //     top: 80px;
-        //     position: fixed;
-        //     left: 0px;
-        //     width: 100%;
-        //     background-color: #fff;
-        //     z-index: 99;
-        //     padding-left: 20px;
-        //     padding-bottom: 10px;
-        // }
+    .navbar-toggler-icon {
+        background-image: url("/assets/images/list.png");
     }
-    
     
 }
 
@@ -247,6 +245,7 @@ header {
     @include mobile-device-screen {
         padding-bottom: 0px;
         padding-left: 0px;
+        padding-top: 65px;
     }
     .is-mobile {
         height: 230px;
