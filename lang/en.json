@@ -21,6 +21,16 @@
     "THE_TEAM_TEXT":"We’re designers, developers and business directors. We’re real people just like you.",
     "AMAZING_FOOTER":"Ready to make something amazing?",
     "STARTED_FOOTER":"Let's Get Started!",
-    "ABOUT_FOOTER":"DevHouse is a web & mobile app agency focusing on beautifully-designed UI/UX, powerful websites and useful mobile applications. Founded in 2018, Our Mission to help your idea birth by understanding of user behavior with a commitment to meeting the business goals."
+    "ABOUT_FOOTER":"DevHouse is a web & mobile app agency focusing on beautifully-designed UI/UX, powerful websites and useful mobile applications. Founded in 2018, Our Mission to help your idea birth by understanding of user behavior with a commitment to meeting the business goals.",
 
+    "CONTACT_FORM_HEADER": "Helo! you can tell us what you need",
+    "PLEASE_YOUR_NAME":"Please tell us your name",
+    "YOUR_EMAIL":"Your Email",
+    "Tipe_Project":"Type of the project",
+    "A_GLANCE":"A glance about this project",
+    "A_GLANCE_DETAIL":"Tell us about your project idea. Do you have a reference, e.g a website , an app that you like?",
+    "READY_CALL":"Do you have time to meet?",
+    "THE_DATE":"set the date",
+    "BOOKS":"with us!",
+    "NEED_MEET":"Need to meetup?"
 }

@@ -694,8 +694,7 @@ footer {
             margin-top: 30px;
             width: 205px;
             margin-bottom: 28px;
-            color: #fff;
-            
+            color: #fff;  
         }
         h3 {
             margin-bottom: 20px;
@@ -817,60 +816,6 @@ footer {
     padding-right:0px;
 }
 
-// forms 
-
-.form-style-8{
-    font-family: 'Muli', sans-serif;
-    background: #FFFFFF;
-    margin: 50px auto;
-    
-
-}
-.form-style-8 input[type="text"],
-.form-style-8 input[type="date"],
-.form-style-8 input[type="datetime"],
-.form-style-8 input[type="email"],
-.form-style-8 input[type="number"],
-.form-style-8 input[type="search"],
-.form-style-8 input[type="time"],
-.form-style-8 input[type="url"],
-.form-style-8 input[type="password"],
-.form-style-8 textarea,
-.form-style-8 select 
-{
-    box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    outline: none;
-    display: block;
-    width: 100%;
-    padding: 7px;
-    border: none;
-    border-bottom: 1px solid #ddd;
-    background: transparent;
-    margin-bottom: 10px;
-    font: 16px Arial, Helvetica, sans-serif;
-    height: 45px;
-}
-.form-style-8 textarea{
-    resize:none;
-    overflow: hidden;
-}
-.form-style-8 input[type="button"], 
-.form-style-8 input[type="submit"]{
-
-    background-color: #fe3;
-    border: 1px solid #f6e204;
-    display: inline-block;
-    cursor: pointer;
-    color: #121921;
-    font-family: 'Muli', sans-serif;
-    font-size: 14px;
-    padding: 8px 18px;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-weight: bold;
-}
 
 //mobile
 
@@ -887,6 +832,58 @@ footer {
     @include mobile-device-screen { 
         display: none;
     }
+}
+
+// modal 
+#contact-form {
+    .hello {
+        width: 65%;
+        float: left;
+        p {
+            font-size: 23px;    
+            margin-top: 20px;
+            line-height: 26px;
+            span {
+                color: red;
+            }
+        }
+        img {
+            position: absolute;
+            width: 46px;
+            left: -11px;
+            top: 105px;
+            @include mobile-device-screen {
+                display: none;
+            }
+        }
+    }
+    .fadil {
+        float: right;
+
+    }
+    .datepick {
+        width: 90%;
+        float: right;
+        @include mobile-device-screen {
+            width: 100%;
+        }
+    }
+    .xdsoft_datetimepicker.xdsoft_inline {
+        margin-top: 20px;
+    }
+}
+.modal-dialog {
+    max-width: 780px;
+}
+.modal-footer {
+    @include mobile-device-screen {
+        display: block;
+        button {
+            float: left;
+            margin-bottom: 20px;
+        }
+    }
+    
 }
 
 

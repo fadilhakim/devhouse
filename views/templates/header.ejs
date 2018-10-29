@@ -13,6 +13,7 @@
     <link href="/bootstrap/css/bootstrap.css" type="text/css" rel="stylesheet">
     <link href="/stylesheets/screen.css" type="text/css" rel="stylesheet">
     <link href="/stylesheets/font.css" type="text/css" rel="stylesheet">
+    <link href="/stylesheets/jquery.datetimepicker.min.css" type="text/css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="/foundation-icons/foundation-icons.css" />
     <script>
        window.addEventListener("load",function(){
@@ -47,7 +48,7 @@
                     <ul>
                         <li><a href="tel:+6281295009910"><i class="step fi-telephone size-36"></i> +62812-9500-9910</a></li>
                         <li><a href="mailto:fadil.nylon@gmail.com?Subject=Hello%20DevHouseID"><i class="step fi-mail size-36"></i> devhouseid99@gmail.com</a></li>
-                        <li><a href="#"  data-toggle="modal" data-target="#exampleModal">Need Quotation ?<i style="color:#FF6510" class="fas fa-question-circle"></i></a></li>
+                        <li><a href="#"  data-toggle="modal" data-target="#exampleModal"><%=translation.NEED_MEET%><i style="color:#FF6510" class="fas fa-question-circle"></i></a></li>
                     </ul>
                 </div>
                 <div class="col-lg-4 socmed">
@@ -104,38 +105,66 @@
         </nav>
         
     </header>
+
     
 <!-- Quotation Modal -->
 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
         <div class="modal-header" style="background-color:#fe3; color:#335578">
-            <h5 class="modal-title opensans-bold muli-semi-bold" id="exampleModalLabel">Hola! you can tell us what you need</h5>
+        <h5 class="modal-title opensans-bold muli-semi-bold" id="exampleModalLabel"><%=translation.CONTACT_FORM_HEADER%></h5>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
             </button>
         </div>
-        <form action="">
+        <form action="/contact" id="contact-form" method="post" role="form">
             <div class="modal-body">
-            
-                    <div class="form-group">
-                        <label for="category " class="opensans-bold mb-2 muli-light">Choose Category</label>
-                        <select class="form-control opensans-reg muli-light" id="category">
-                            <option>Mobile Apps</option>
-                            <option>Web Apps</option>
-                            <option>E-commerce</option>
-                            <option>Others</option>
-                        </select>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="form-group">
+                                <label for="detail"  class="opensans-bold mb-2 muli-light"><%=translation.PLEASE_YOUR_NAME%></label>
+                                <input class="form-control muli-reg" required name="name">
+                            </div>
+                            <div class="form-group">
+                                <label for="detail"  class="opensans-bold mb-2 muli-light"><%=translation.YOUR_EMAIL%></label>
+                                <input class="form-control muli-reg" required name="email">
+                            </div>
+        
+                            <div class="form-group">
+                                <label for="category " class="opensans-bold mb-2 muli-light"><%=translation.Tipe_Project%></label>
+                                <select class="form-control muli-reg" required name="category" id="category">
+                                    <option>Mobile Apps</option>
+                                    <option>Web Apps</option>
+                                    <option>UI & UX</option>
+                                    <option>Others</option>
+                                </select>
+                            </div>
+        
+                            <div class="form-group">
+                                <label for="detail"  class="opensans-bold mb-2 muli-light"><%=translation.A_GLANCE%></label>
+                                <textarea class="form-control opensans-reg muli-reg" placeholder="<%=translation.A_GLANCE_DETAIL%>" required  id="detail" name="detail" rows="3"></textarea>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="hello">
+                                <p class="muli-light"> <%=translation.READY_CALL%> <br> <%=translation.THE_DATE%> <span><%=translation.BOOKS%></span>
+                                    <img class="centered" width="100" src="/assets/images/arrow-contact.png">
+                                </p>   
+                                
+                            </div>
+                            <img class="fadil" width="100" src="/assets/images/teams/fadil@2x.png">
+                            
+                            <div class="datepick">
+                                <input id="datetimepicker" name="date" type="text" >
+                            </div>
+                            
+                        </div>
                     </div>
-
-                    <div class="form-group">
-                        <label for="detail"  class="opensans-bold mb-2 muli-light">This quotation for ?</label>
-                        <textarea class="form-control opensans-reg" id="detail" rows="3"></textarea>
-                    </div>
+                    
                 
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-primary muli-bold btn-grad-blue " data-dismiss="modal">Send</button>
+                <button type="submit" class="btn btn-primary muli-bold btn-grad-blue ">Call Us!</button>
             </div>
         </form>
         </div>
